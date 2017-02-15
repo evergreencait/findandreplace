@@ -4,8 +4,13 @@ using System.Collections.Generic;
 
 namespace FindAndReplaceApp
 {
-  public class FindAndReplace
+  public class FindAndReplaceTest
   {
-    
+    [Fact]
+    public void FindAndReplaceTest_ForUserInputSentence_sentence()
+    {
+      FindAndReplace testSentence = new FindAndReplace();
+      Assert.Equal("Hello world", testSentence.FindAndReplaceResult("Hello world"));
+    }
   }
 }
