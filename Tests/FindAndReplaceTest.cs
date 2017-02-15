@@ -19,5 +19,12 @@ namespace FindAndReplaceApp
       FindAndReplace testWord = new FindAndReplace();
       Assert.Equal("Hello universe", testWord.FindAndReplaceResult("Hello world", "world", "universe"));
     }
+
+    [Fact]
+    public void FindAndReplaceTest_ForUserInputSelectedPartWord_sentence()
+    {
+      FindAndReplace testSentence = new FindAndReplace();
+      Assert.Equal("My cat loves hotcats", testSentence.FindAndReplaceResult("My dog loves hotdogs", "dog", "cat"));
+    }
   }
 }
