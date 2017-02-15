@@ -7,10 +7,17 @@ namespace FindAndReplaceApp
   public class FindAndReplaceTest
   {
     [Fact]
-    public void FindAndReplaceTest_ForUserInputSentence_sentence()
+    public void FindAndReplaceTest_ForUserInputa_b()
     {
-      FindAndReplace testSentence = new FindAndReplace();
-      Assert.Equal("Hello world", testSentence.FindAndReplaceResult("Hello world"));
+      FindAndReplace testLetter = new FindAndReplace();
+      Assert.Equal("b", testLetter.FindAndReplaceResult("a", "a", "b"));
+    }
+
+    [Fact]
+    public void FindAndReplaceTest_ForUserInputSelectWord_word()
+    {
+      FindAndReplace testWord = new FindAndReplace();
+      Assert.Equal("Hello universe", testWord.FindAndReplaceResult("Hello world", "world", "universe"));
     }
   }
 }

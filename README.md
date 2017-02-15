@@ -10,17 +10,9 @@ _This application will allow users to enter a sentence, and then choose a word t
 
 ## Specifications
 
-#### When user inputs a sentence, the program will output the exact sentence.
-* Input: "Hello world"
-* Output: "Hello world"
-
-#### User can select word from inputted sentence and program will display selected word.
-* Input: "Hello world"
-* Output: "world"
-
-#### User can select a word to replace previous selected word in sentence.
-* Input: {"Hello world, "world", "universe"}
-* Output: "universe"
+#### Program will replace first selected letter with second selected letter.
+* Input: {"a", "a", "b"}
+* Output: "b"
 
 #### Program will replace first selected word with second selected word.
 * Input: {"Hello world, "world", "universe"}
