@@ -20,6 +20,14 @@ namespace FindAndReplaceApp
           {
             split[i] = split[i].Replace(selectedWord, replacedWord);
           }
+          else if (split[i].ToLower().Contains(selectedWord.ToLower()))
+          {
+            split[i] = split[i].ToLower().Replace(selectedWord.ToLower(), replacedWord.ToUpper());
+          }
+          else if (i != 0)
+          {
+            split[i] = split[i].ToLower();
+          }
         }
         sentence = string.Join(" ", split);
       }
