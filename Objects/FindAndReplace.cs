@@ -7,12 +7,15 @@ namespace FindAndReplaceApp
   {
     public string FindAndReplaceResult(string sentence, string selectedWord, string replacedWord)
     {
+      // string selectedWordAltered = selectedWord.ToLower();
+
       if (sentence.Contains(" "))
       {
         string[] split = sentence.Split(' ');
 
         for (int i = 0; i < split.Length; i++)
         {
+          // string splitAltered = split[i].ToLower();
           if (split[i].Contains(selectedWord))
           {
             split[i] = split[i].Replace(selectedWord, replacedWord);

@@ -22,6 +22,12 @@ _This application will allow users to enter a sentence, and then choose a word t
 * Input: {"My dog loves hotdogs", "dog", "cat"}
 * Output: "My cat loves hotcats"
 
+#### User can selected replace first selected word (or partial word) with selected word despite capitalization.
+* Input: {"My doG loVes hotDogs", "dOg", "CAT"}
+* Output: "My CAT loves hotCATs"
+
+
+
 
 
 ## Support and contact details

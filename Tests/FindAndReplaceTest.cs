@@ -26,5 +26,12 @@ namespace FindAndReplaceApp
       FindAndReplace testSentence = new FindAndReplace();
       Assert.Equal("My cat loves hotcats", testSentence.FindAndReplaceResult("My dog loves hotdogs", "dog", "cat"));
     }
+
+    // [Fact]
+    // public void FindAndReplaceTest_ForUserInputCaplitalization_capitalization()
+    // {
+    //   FindAndReplace testCapitalization = new FindAndReplace();
+    //   Assert.Equal("My cat loVes hotcats", testCapitalization.FindAndReplaceResult("My doG loVes hotDogs", "dog", "cat"));
+    // }
   }
 }
